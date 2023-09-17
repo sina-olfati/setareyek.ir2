@@ -1,0 +1,107 @@
+import React, { useEffect, useState } from 'react'
+import './Top.css'
+
+// images
+import circle from "../../assets/images/circle.svg"
+import circleDark from "../../assets/images/circleDark.svg"
+import mobile1 from "../../assets/images/mobile1.jpg"
+import mobile2 from "../../assets/images/mobile2.jpg"
+import mobile3 from "../../assets/images/mobile3.jpg"
+import mobile1Dark from "../../assets/images/mobile1Dark.jpg"
+import mobile2Dark from "../../assets/images/mobile2Dark.jpg"
+import mobile3Dark from "../../assets/images/mobile3Dark.jpg"
+import arrow from "../../assets/images/arrow.svg"
+import apple from "../../assets/images/apple.svg"
+import appleDark from "../../assets/images/appleDark.svg"
+import android from "../../assets/images/android.svg"
+import androidDark from "../../assets/images/androidDark.svg"
+
+
+
+const Top = () => {
+
+    // theming
+    const [mode, setMode] = useState(localStorage.getItem("theme") ? localStorage.getItem("theme") : "light")
+    // console.log("Theme", mode)
+
+    const check = localStorage.getItem("theme");
+
+    useEffect(() => {
+        setMode(localStorage.getItem("theme"));
+    }, [check]);
+
+    
+    const images = [
+        {id: 1, image: mode === "light" ? mobile1 : mobile1Dark},
+        {id: 2, image: mode === "light" ? mobile2 : mobile2Dark},
+        {id: 3, image: mode === "light" ? mobile3 : mobile3Dark},
+        {id: 4, image: mode === "light" ? mobile1 : mobile1Dark},
+        {id: 5, image: mode === "light" ? mobile2 : mobile2Dark},
+    ]
+
+    const [counter, setCounter] = useState(2)
+
+    const arrowHandler = (action) => {
+        // action === "increment" ? counter++ : counter--;
+        // counter === 1 ? counter = 4 : null;
+        // counter === 5 ? counter = 2 : null;
+        console.log(action)
+        if (action === "increment") {
+            if (counter === 4) {
+                setCounter(2)
+            } else {
+                setCounter(counter + 1)
+            }
+        } else {
+            if (counter === 2) {
+                setCounter(4)
+            } else {
+                setCounter(counter - 1)
+            }
+        }
+    }
+    console.log("counter", counter)
+    
+  return (
+    <div className='top-container'>
+      
+      <div className='t-preview'>
+        <img className='t-circleBG' src={mode === "light" ? circle : circleDark} alt='circle background' />
+
+        <div className='t-slider'>
+
+            <span className='t-arrow'>
+                <img src={arrow} onClick={() => arrowHandler("decrement")} alt='left arrow' />
+            </span>
+
+            <div className='t-mobile'>
+                <div className={`t-slides t-${counter}`}>
+                    {images.map((i) => (
+                        <img key={i.id} src={i.image} alt='the mobile' />
+                    ))}
+                </div>
+            </div>
+
+            <span className='t-arrow'>
+                <img src={arrow} onClick={() => arrowHandler("increment")} alt='right arrow' />
+            </span>
+
+        </div>
+      </div>
+
+
+      <div className='t-data'>
+        <div className='t-texts'>
+
+        </div>
+        <div className='t-download'>
+            <button><img src={mode === "light" ? apple : appleDark} /> <p>دانلود نسخه ios</p></button>
+            <button><img src={mode === "light" ? android : androidDark} /> <p>دانلود نسخه اندروید</p></button>
+        </div>
+      </div>
+
+    </div>
+  )
+}
+
+export default Top

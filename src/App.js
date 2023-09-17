@@ -2,8 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import { useState, createContext, useMemo } from "react";
 
-// components
+// utils
 import Menu from './utils/menu/Menu';
+
+// components
+import Home from './pages/Home';
 
 // mui theme (light and dark)
 // import { ThemeProvider, useTheme, createTheme } from "@mui/material/styles";
@@ -44,6 +47,9 @@ function App() {
           <CssVarsProvider theme={theme}>
             <CssBaseline />
             <Menu theme={colorMode} />
+
+            <Home />
+
           </CssVarsProvider>
       </ColorModeContext.Provider>
     </div>
