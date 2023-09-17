@@ -7,6 +7,7 @@
               // purples
               primary: {
                 main: '#5439AC',
+                button: "F9F9FD",
                 // light: '#5439AC40',
                 // dark: '#5e35b1',
                 // darkest: '#3d348b',  
@@ -30,6 +31,7 @@
               // purples
               primary: {
                 main: '#222222',
+                button: "#222222",
                 // light: '#22222240',
                 // dark: '#5e35b1',
                 // darkest: '#3d348b', 
