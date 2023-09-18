@@ -42,7 +42,7 @@ const Top = () => {
         {id: 5, image: mode === "light" ? mobile2 : mobile2Dark},
     ]
 
-    const [counter, setCounter] = useState(2)
+    const [counter, setCounter] = useState(1)
 
     const arrowHandler = (action) => {
         // action === "increment" ? counter++ : counter--;
@@ -50,14 +50,14 @@ const Top = () => {
         // counter === 5 ? counter = 2 : null;
         console.log(action)
         if (action === "increment") {
-            if (counter === 4) {
-                setCounter(2)
+            if (counter === 3) {
+                setCounter(1)
             } else {
                 setCounter(counter + 1)
             }
         } else {
-            if (counter === 2) {
-                setCounter(4)
+            if (counter === 1) {
+                setCounter(3)
             } else {
                 setCounter(counter - 1)
             }
