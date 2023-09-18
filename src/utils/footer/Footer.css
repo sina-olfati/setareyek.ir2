@@ -75,10 +75,11 @@
     padding: 0 25px;
     height: 40px;
     color: white;
-    background-color: #ffffff30;
+    background-color: #ffffff50;
     border-radius: 30px;
     font-size: 1rem;
     border: none;
+    outline: none;
     direction: rtl;
     width: 270px;
 }
@@ -103,4 +104,84 @@
 
 .f-rights {
     display: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .f-enamad {
+        /* border: solid 1px yellow; */
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .f-images {
+        /* border: solid 1px red; */
+        width: 135px;
+        padding: 0;
+        margin: 0;
+    }
+    .f-images img:first-child {
+        display: none;
+    }
+    .f-images img:last-child {
+        width: 100%;
+    }
+    .f-recieve {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .footer-container {
+        height: 400px;
+        align-items: end;
+        position: relative;
+    }
+    .f-enamad,
+    .f-buttons {     
+        width: 50%;
+        border-left: none;
+    }
+    .f-enamad {
+        /* border: solid 1px yellow; */
+        margin-bottom: 50px;
+    }
+    .f-recieve {
+        width: 95%;
+        position: absolute;
+        top: 0px;
+        border-left: none;
+        border-bottom: solid 2px #ffffff30;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .f-recieve {
+        /* border: solid 1px red; */
+    }
+    .f-recieve h2 {
+        font-size: 1rem;
+    }
+    .f-num {
+        /* border: solid 1px red; */
+        position: relative;
+    }
+    .f-num button {
+        position: absolute;
+        left: 5px;
+        height: 30px;
+        padding: 0 20px;
+        font-size: 0.8rem;
+        margin-right: 10px;
+    }
+    .f-num input {
+        padding: 0 25px 0 120px;
+        height: 40px;
+        color: white;
+        font-size: 0.8rem;
+        font-weight: 600;
+        width: 350px;
+    }
 }
