@@ -50,11 +50,11 @@ const Menu = ({theme}) => {
 
 
   const items = [
-    {name: "درباره ما", link: ""},
-    {name: "تماس با ما", link: ""},
-    {name: "خدمات", link: ""},
-    {name: "راهمنا و قوانین", link: ""},
     {name: "جوایز و برندگان", link: ""},
+    {name: "راهمنا و قوانین", link: ""},
+    {name: "خدمات", link: ""},
+    {name: "تماس با ما", link: ""},
+    {name: "درباره ما", link: ""},
     // {name: "home", icon: <HomeIcon />},
     // {name: "resume", icon: <DescriptionIcon />},
     // {name: "portfolio", icon: <DashboardIcon />},
