@@ -1,7 +1,15 @@
 .title-container {
     /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title-content {
+    /* border: solid 1px red; */
     border-top: solid 2px var(--mui-palette-primary-title);
-    margin: 0 100px 50px 100px;
+    margin: 0 20px 50px 20px;
+    width: 100%;
+    max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content: center;
