@@ -1,5 +1,6 @@
 .title-container {
     /* border: solid 1px red; */
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;

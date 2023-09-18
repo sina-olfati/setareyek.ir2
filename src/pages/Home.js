@@ -9,9 +9,9 @@ import Services from '../components/home/Services'
 const Home = () => {
   return (
     <div className='home-container'>
-      {/* <Top /> */}
-      {/* <TheApp /> */}
-      {/* <Services /> */}
+      <Top />
+      <TheApp />
+      <Services />
     </div>
   )
 }

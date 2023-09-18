@@ -1,3 +1,5 @@
 .App {
   background-color: var(--mui-palette-secondary-main);
+  width: 100%;
+  overflow: hidden;
 }

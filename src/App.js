@@ -48,7 +48,7 @@ function App() {
           <CssVarsProvider theme={theme}>
             <CssBaseline />
 
-            {/* <Menu theme={colorMode} /> */}
+            <Menu theme={colorMode} />
             <Home />
             <Footer />
 

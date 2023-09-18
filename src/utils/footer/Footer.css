@@ -1,4 +1,106 @@
 .footer-container {
     background-color: var(--mui-palette-primary-main);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-enamad,
+.f-recieve,
+.f-buttons {
+    /* border: solid 1px red; */
+    width: 30%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    border-left: solid 2px #ffffff30;
+}
+
+.f-enamad {
+    border-left: none;
+}
+.f-images {
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #333333;
+    border-radius: 17px;
+    width: 270px;
+    height: 150px;
+    overflow: hidden;
+}
+.f-images img {
+    /* border: solid 1px red; */
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-recieve {
+    /* border: solid 1px red; */
+    width: 40%;
+}
+.f-recieve h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+.f-num {
+    /* border: solid 1px red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-num button {
+    height: 40px;
+    padding: 0 25px;
+    border-radius: 30px;
+    border: none;
+    background-color: white;
+    color: #222222;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.f-num input {
+    padding: 0 25px;
+    height: 40px;
+    color: white;
+    background-color: #ffffff30;
+    border-radius: 30px;
+    font-size: 1rem;
+    border: none;
+    direction: rtl;
+    width: 270px;
+}
+.f-num input::placeholder {
+    color: white;
+}
+
+/* .f-buttons {
+    border: solid 1px red;
+} */
+.f-buttons .bButton-container:first-child {
+    margin-bottom: 20px;
+}
+.f-buttons button {
+    background-color: transparent !important;
+    border: solid 2px white !important;
+    color: white !important;
+}
+.f-buttons button p {
+    color: white !important;
+}
+
+.f-rights {
+    display: none;
 }
