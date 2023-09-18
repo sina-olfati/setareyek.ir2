@@ -1,0 +1,19 @@
+.title-container {
+    /* border: solid 1px red; */
+    border-top: solid 2px var(--mui-palette-primary-title);
+    margin: 0 100px 50px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container h2 {
+    /* border: solid 1px red; */
+    color: var(--mui-palette-info-purple);
+    background-color: var(--mui-palette-primary-title);
+    padding: 3px 30px;
+    border-radius: 0 0 17px 17px;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}

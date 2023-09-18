@@ -42,7 +42,7 @@ const Menu = ({theme}) => {
     setMode(localStorage.getItem("theme"))
   }
   
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (localStorage.getItem("theme") === "dark") {
       theme.toggleColorMode();
     }

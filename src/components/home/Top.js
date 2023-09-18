@@ -60,7 +60,7 @@ const Top = () => {
             }
         }
     }
-    console.log("counter", counter)
+    // console.log("counter", counter)
     
   return (
     <div className='top-container'>

@@ -7,7 +7,8 @@
               // purples
               primary: {
                 main: '#5439AC',
-                button: "F9F9FD",
+                button: "#ffffff",
+                title:"#92929220"
                 // light: '#5439AC40',
                 // dark: '#5e35b1',
                 // darkest: '#3d348b',  
@@ -24,6 +25,7 @@
                 // light: '#00000099',
                 lightest: '#92929220',
                 dark: '#ffffff',
+                purple: "#5439AC",
               },
             }
           : {
@@ -32,6 +34,8 @@
               primary: {
                 main: '#222222',
                 button: "#222222",
+                title: "#222222"
+                // title: ""
                 // light: '#22222240',
                 // dark: '#5e35b1',
                 // darkest: '#3d348b', 
@@ -45,8 +49,9 @@
               info: {
                 main: '#ffffff',
                 light: '#ffffff',
-                lightest: '#ffffff20',
+                lightest: '#ffffff',
                 dark: '#56596A',
+                purple: "#ffffff",
               },
             }),
       },
