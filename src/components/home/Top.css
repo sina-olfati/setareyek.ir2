@@ -57,7 +57,7 @@
     border: solid 2px var(--mui-palette-info-main);
     border-radius: 100px;
     height: 45px;
-    background-color: var(--mui-palette-primary-button);
+    background-color: var(--mui-palette-secondary-contrast);
     display: flex;
     align-items: center;
     justify-content: center;

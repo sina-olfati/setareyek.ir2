@@ -8,7 +8,7 @@ import TheApp from '../components/home/TheApp'
 const Home = () => {
   return (
     <div className='home-container'>
-      <Top />
+      {/* <Top /> */}
       <TheApp />
     </div>
   )

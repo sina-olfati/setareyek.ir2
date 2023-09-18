@@ -1,0 +1,33 @@
+.app-container {
+    /* border: solid 1px red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-card {
+    /* border: solid 1px blue; */
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    direction: rtl;
+    background-color: var(--mui-palette-secondary-contrast);
+    margin-bottom: 150px;
+    border-radius: 17px;
+}
+.app-card.shadow {
+    box-shadow: 0 0px 10px var(--mui-palette-info-lightest);
+}
+
+.app-card img {
+    /* border: solid 1px red; */
+    margin: 20px;
+    border-radius: 17px;
+}
+
+.app-card p {
+    color: var(--mui-palette-info-purple);
+    padding: 20px 10px 20px 20px;
+}

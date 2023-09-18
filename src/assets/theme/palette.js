@@ -7,7 +7,6 @@
               // purples
               primary: {
                 main: '#5439AC',
-                button: "#ffffff",
                 title:"#92929220"
                 // light: '#5439AC40',
                 // dark: '#5e35b1',
@@ -17,6 +16,7 @@
               secondary: {
                 main: '#F9F9FD',
                 dark: '#333333',
+                contrast: "#ffffff",
               },
               // texts
               info: {
@@ -33,17 +33,17 @@
               // purples
               primary: {
                 main: '#222222',
-                button: "#222222",
                 title: "#222222"
                 // title: ""
                 // light: '#22222240',
                 // dark: '#5e35b1',
                 // darkest: '#3d348b', 
               },
-            // background
-            secondary: {
+              // background
+              secondary: {
                 main: '#333333',
                 dark: '#F9F9FD',
+                contrast: "#222222",
               },
               // texts
               info: {
