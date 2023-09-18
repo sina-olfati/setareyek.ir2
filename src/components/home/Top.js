@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Top.css'
 
+// utils
+import BButton from '../../utils/borderButton/BButton'
+
 // images
 import circle from "../../assets/images/circle.svg"
 import circleDark from "../../assets/images/circleDark.svg"
@@ -107,8 +110,10 @@ const Top = () => {
             </p>
         </div>
         <div className='t-download'>
-            <button><img src={mode === "light" ? apple : appleDark} /> <p>دانلود نسخه ios</p></button>
-            <button><img src={mode === "light" ? android : androidDark} /> <p>دانلود نسخه اندروید</p></button>
+            {/* <button><img src={mode === "light" ? apple : appleDark} /> <p>دانلود نسخه ios</p></button>
+            <button><img src={mode === "light" ? android : androidDark} /> <p>دانلود نسخه اندروید</p></button> */}
+            <BButton image={apple} imageDark={appleDark} text="دانلود نسخه ios" />
+            <BButton image={android} imageDark={androidDark} text="دانلود نسخه اندروید" />
         </div>
       </div>
 

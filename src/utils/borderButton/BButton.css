@@ -1,0 +1,34 @@
+.bButton-container {
+    /* border: solid 1px red; */
+    width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.bButton-container button {
+    border: solid 2px var(--mui-palette-info-main);
+    border-radius: 100px;
+    width: 100%;
+    height: 45px;
+    background-color: var(--mui-palette-secondary-contrast);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    /* margin-left: 20px; */
+}
+
+.bButton-container button img {
+    padding: 0;
+    margin: 0px 10px;
+    /* margin-right: 40px; */
+}
+
+.bButton-container button p {
+    padding: 0;
+    margin: 0 10px;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: var(--mui-palette-info-main);
+}
