@@ -9,7 +9,7 @@ import Services from '../components/home/Services'
 const Home = () => {
   return (
     <div className='home-container'>
-      <Top />
+      {/* <Top /> */}
       {/* <TheApp /> */}
       {/* <Services /> */}
     </div>

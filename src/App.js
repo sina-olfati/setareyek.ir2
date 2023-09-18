@@ -4,6 +4,7 @@ import { useState, createContext, useMemo } from "react";
 
 // utils
 import Menu from './utils/menu/Menu';
+import Footer from './utils/footer/Footer';
 
 // components
 import Home from './pages/Home';
@@ -46,9 +47,10 @@ function App() {
       <ColorModeContext.Provider value={colorMode}>
           <CssVarsProvider theme={theme}>
             <CssBaseline />
-            {/* <Menu theme={colorMode} /> */}
 
+            {/* <Menu theme={colorMode} /> */}
             <Home />
+            <Footer />
 
           </CssVarsProvider>
       </ColorModeContext.Provider>
